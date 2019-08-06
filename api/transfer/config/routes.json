@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/transfers",
+      "handler": "Transfer.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/transfers/count",
+      "handler": "Transfer.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/transfers/nationalID/:nationalID",
+      "handler": "Transfer.nationalID",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/transfers",
+      "handler": "Transfer.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/transfers/:_id",
+      "handler": "Transfer.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/transfers/nationalID/:nationalID",
+      "handler": "Transfer.deleteByNationalID",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

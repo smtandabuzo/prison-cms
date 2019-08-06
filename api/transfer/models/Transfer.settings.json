@@ -1,0 +1,40 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "transfer",
+    "description": "Transfer API"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "nationalID": {
+      "type": "integer"
+    },
+    "fileNumber": {
+      "type": "integer"
+    },
+    "fromPrison": {
+      "enum": [
+        "Wellington",
+        "Pollsmoor",
+        "Kokstad Maximum",
+        "Pretoria Maximum"
+      ],
+      "type": "enumeration"
+    },
+    "toPrison": {
+      "enum": [
+        "Wellington",
+        "Pollsmoor",
+        "Kokstad Maximum",
+        "Pretorial Maximum"
+      ],
+      "type": "enumeration"
+    },
+    "dateOfTransfer": {
+      "type": "date"
+    }
+  }
+}
