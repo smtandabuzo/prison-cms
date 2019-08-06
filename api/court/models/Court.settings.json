@@ -1,0 +1,28 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "court",
+    "description": "Court API"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "nationalID": {
+      "type": "integer"
+    },
+    "fileNumber": {
+      "type": "integer"
+    },
+    "dateOfTrial": {
+      "type": "date"
+    },
+    "sentence": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    }
+  }
+}

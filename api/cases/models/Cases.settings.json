@@ -1,0 +1,35 @@
+{
+  "connection": "default",
+  "collectionName": "cases",
+  "info": {
+    "name": "cases",
+    "description": "Cases API"
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "fileNumber": {
+      "type": "string"
+    },
+    "dateOfTrial": {
+      "type": "date"
+    },
+    "sentence": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "fullName": {
+      "type": "string"
+    },
+    "nationalID": {
+      "type": "integer",
+      "max": 99
+    }
+  }
+}

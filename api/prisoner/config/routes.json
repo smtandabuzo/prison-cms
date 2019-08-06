@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/prisoners",
+      "handler": "Prisoner.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/prisoners/count",
+      "handler": "Prisoner.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/prisoners/nationalID/:nationalID",
+      "handler": "Prisoner.nationalID",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/prisoners",
+      "handler": "Prisoner.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/prisoners/:_id",
+      "handler": "Prisoner.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/prisoners/nationalID/:nationalID",
+      "handler": "Prisoner.deleteByNationalID",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

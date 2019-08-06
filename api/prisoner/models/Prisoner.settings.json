@@ -1,0 +1,51 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "prisoner",
+    "description": "Prisoner API"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "nationalID": {
+      "type": "integer"
+    },
+    "fullName": {
+      "type": "string"
+    },
+    "dateOfBirth": {
+      "type": "date"
+    },
+    "address": {
+      "type": "text"
+    },
+    "prison": {
+      "type": "string"
+    },
+    "gender": {
+      "enum": [
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "type": "enumeration"
+    },
+    "education": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "offence": {
+      "type": "string"
+    },
+    "dateIn": {
+      "type": "date"
+    },
+    "fileNumber": {
+      "type": "integer"
+    }
+  }
+}
