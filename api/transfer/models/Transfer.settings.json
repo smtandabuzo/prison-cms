@@ -1,12 +1,15 @@
 {
   "connection": "default",
-  "collectionName": "",
+  "collectionName": "transfer",
   "info": {
     "name": "transfer",
     "description": "Transfer API"
   },
   "options": {
-    "timestamps": true
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
   },
   "attributes": {
     "nationalID": {
@@ -29,7 +32,7 @@
         "Wellington",
         "Pollsmoor",
         "Kokstad Maximum",
-        "Pretorial Maximum"
+        "Pretoria Maximum"
       ],
       "type": "enumeration"
     },

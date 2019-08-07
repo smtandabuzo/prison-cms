@@ -7,7 +7,7 @@
 module.exports = {
   nationalID: async function(params) {
     let url = params.request.url;
-    let length = url.slice(18).length;
+    let length = url.slice(22).length;
     console.log('Length ' + length);
     let param = url.slice(-(length));
     console.log('Param ' + param);
@@ -15,7 +15,7 @@ module.exports = {
   },
   deleteByNationalID: async function(params){
     let url = params.request.url;
-    let length = url.slice(18).length;
+    let length = url.slice(22).length;
     console.log('Length ' + length);
     let param = url.slice(-(length));
     return await Transfer.deleteOne({nationalID: param});
